@@ -1,6 +1,6 @@
 cask "windowhop" do
-  version "2.3.3"
-  sha256 "0b23649b97148e13fc6c9c90784cb74b1f0fc73821c1648c6e5ee85ae91cbd47"
+  version "2.4.0"
+  sha256 "0f06bcc73103196b985834af0b5b7407bde5ccfc85d30f1349b1ff207c489f68"
 
   url "https://github.com/martonpaulo/windowhop/releases/download/v#{version}/WindowHop-#{version}.dmg"
   name "WindowHop"
