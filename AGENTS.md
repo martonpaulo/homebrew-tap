@@ -20,7 +20,7 @@
 - Product versioning: none. The tap has no version of its own; each cask's `version` follows its app's published release.
 - Merge policy: merge commits only; never squash or rebase
 - Commit subject: a commit made for an issue ends with `(#<issue number>)`, never the pull request's.
-- Delete branches after merge: disabled
+- Delete branches after merge: enabled (owner decision, Inbox D2 A, 2026-11-26)
 - Release, signing, and secret-storage policy: not applicable to the tap itself: it publishes no release. Each app's `release.yml` bumps its cask with the optional `HOMEBREW_TAP_TOKEN` secret, stored in the app repository, never here; without it, the cask is bumped by hand with `bench-release`'s `bump-cask.sh`. The `bench-project-standards` skill's `references/homebrew-tap.md` owns both paths.
 - Default-branch protection: none, and no ruleset. Its one author commits to `main` directly, the app release workflows push cask bumps to it, and `make check` gates each commit; read the `Validate` result after each push (recorded 2026-11-26).
 - Secret protection: GitHub secret scanning and push protection enabled (read back 2026-11-26). They are backstops, not a substitute for reading the exact payload before a push.
