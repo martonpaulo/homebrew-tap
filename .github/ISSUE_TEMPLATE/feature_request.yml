@@ -1,0 +1,18 @@
+name: Feature request
+description: Suggest a change to a cask or to this tap
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      description: This tap holds casks for Marton Paulo's own apps only.
+      options:
+        - label: This is about a cask in this tap, not about the app's own behavior
+          required: true

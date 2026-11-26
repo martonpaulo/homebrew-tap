@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A problem inside WindowHop
+    url: https://github.com/martonpaulo/windowhop/issues
+    about: Report app bugs in the WindowHop repository.
+  - name: A problem inside Leve
+    url: https://github.com/martonpaulo/leve/issues
+    about: Report app bugs in the Leve repository.

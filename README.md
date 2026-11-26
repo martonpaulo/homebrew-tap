@@ -1,6 +1,6 @@
 # martonpaulo/tap
 
-Homebrew casks for apps by Marton Paulo.
+Install Marton Paulo's macOS apps, WindowHop and Leve, with one Homebrew command each, and remove each app and its settings with one more.
 
 ## WindowHop
 

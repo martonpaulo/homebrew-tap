@@ -1,0 +1,26 @@
+name: Bug report
+description: A cask fails to install, upgrade or uninstall
+labels: ["bug"]
+body:
+  - type: input
+    id: cask
+    attributes:
+      label: Cask
+      placeholder: e.g. windowhop
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: The command you ran, what you expected, and the output you got.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: macOS and Homebrew versions
+      description: The output of `sw_vers -productVersion` and `brew --version`.
+    validations:
+      required: true

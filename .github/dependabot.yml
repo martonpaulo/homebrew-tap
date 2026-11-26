@@ -1,0 +1,14 @@
+# Fleet Dependabot configuration, from the bench-setup skill's templates/dependabot.template.yml.
+# Only GitHub Actions: the tap has no package manifest.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:17"
+      timezone: UTC
+    cooldown:
+      default-days: 3
+    open-pull-requests-limit: 5

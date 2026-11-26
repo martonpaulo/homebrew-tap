@@ -1,0 +1,4 @@
+# Local scratch work and one machine's agent permissions.
+.scratch/
+.claude/settings.local.json
+.DS_Store
