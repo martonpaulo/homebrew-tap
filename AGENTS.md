@@ -27,6 +27,7 @@
 - Skill packs: core, release
 - Skills baseline revision: `560c2437ee7e93e7fd9c8c52102f593bb96f166a`
 - Skills baseline applied: `2026-11-26`
+- Skills baseline divergence `documentation-standard` at `560c2437ee7e93e7fd9c8c52102f593bb96f166a`: no `docs/rules/`. The tap's few rules live in this file and are checked by `make check` (`brew style`, text and link checks); rule pages would repeat them (owner decision, Inbox D4 A, 2026-11-26).
 
 Change an identifier or policy recorded above only through an explicit task describing the migration and its effects.
 
