@@ -16,7 +16,7 @@
 - Product copy: English only, in the README and the casks' `desc`; no localization.
 - Branch policy: work directly on `main`; a branch and pull request only when the owner asks for one. Dependabot pull requests merge through GitHub.
 - Commit policy: automatic. Commit each completed task once `make check` passes, one commit per concern, only the task's files. The app release workflows commit `chore: <Name> <version>` as `github-actions[bot]`.
-- Push policy: automatic. Push each validated commit to `origin/main` right away, as in the owner's other repositories (assumed on 2026-11-26 while the owner was away; no policy was recorded before). A push changes what every user installs, so never push a cask whose `url` and `sha256` were not checked against the published release. Never force-push.
+- Push policy: automatic. Push each validated commit to `origin/main` right away, as in the owner's other repositories (assumed on 2026-11-26 while the owner was away; no policy was recorded before). A push changes what every user installs, so never push a cask whose `url` and `sha256` were not checked against the published release. Never force-push. A cloud session pushes `main` too, only for a `runs: cloud` issue whose gates all ran there (owner, 2026-11-27). Cloud setup command: `bash scripts/cloud-setup.sh`.
 - Product versioning: none. The tap has no version of its own; each cask's `version` follows its app's published release.
 - Merge policy: merge commits only; never squash or rebase
 - Commit subject: a commit made for an issue ends with `(#<issue number>)`, never the pull request's.
