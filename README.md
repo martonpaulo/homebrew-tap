@@ -26,19 +26,8 @@ brew uninstall --zap --cask windowhop
 Today's time and today's events at the edge of your attention, in the macOS menu bar.
 [Source](https://github.com/martonpaulo/leve)
 
-```sh
-brew install --cask martonpaulo/tap/leve
-```
-
-Requires an Apple silicon Mac with macOS 27 or later. After installing, open Leve from
-Applications and allow Calendar access when it asks.
-
-Leve updates itself (Sparkle), so `brew upgrade` is not needed; the cask is marked
-`auto_updates`. To remove it and its settings:
-
-```sh
-brew uninstall --zap --cask leve
-```
+Not yet released: Leve has no published release, so it has no cask yet. This section gets
+its install command, requirements and uninstall command when the first release is out.
 
 ## License
 

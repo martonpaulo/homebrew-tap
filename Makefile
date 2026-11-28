@@ -1,12 +1,17 @@
 # The gate: run `make check` before every commit; Validate runs the same target on each push.
-.PHONY: check dry style text
+.PHONY: check dry style text casks
 
-check: text dry style
+check: text casks dry style
 
 # Repository text: invisible characters, relative links and anchors, issue references as links.
 text:
 	python3 scripts/text_check.py .
 	python3 scripts/issue_links.py .
+
+# No cask with a placeholder sha256.
+casks:
+	python3 checks/cask_checksums.py --root .
+	cd checks && python3 -m unittest -q
 
 # No new magic value, repeated block or rule written twice (counts in dry-check.json only go down).
 dry:
